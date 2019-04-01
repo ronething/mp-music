@@ -13,7 +13,9 @@ git clone [repo]
 pipenv install
 ```
 
-在 `config/setting.py` 下新增 TOKEN='xxxx' 于公众号配置的 TOKEN 一致。
+~~在 `config/setting.py` 下新增 TOKEN='xxxx' 与公众号配置的 TOKEN 一致。~~
+
+在 `app/config` 目录下新建 `secure.py`  新增 TOKEN='xxxx' 与公众号配置的 TOKEN 一致
 
 ```sh
 pipenv shell
