@@ -7,11 +7,25 @@
 Less is more.
 """
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+environ = os.getenv('FLASK_ENV', 'development')
+
 PORT = 7000
 
-DEBUG = True
+if environ == 'production':
 
-HOST = "127.0.0.1"
+    DEBUG = False
+
+    HOST = '0.0.0.0'
+
+else:
+
+    DEBUG = True
+
+    HOST = '127.0.0.1'
 
 # 添加 TOKEN
 # TOKEN = 'xxxx'

@@ -25,7 +25,6 @@ def mp():
         nonce = data.get('nonce', '')
         echostr = data.get('echostr', '')
         mp_list = [current_app.config["TOKEN"], timestamp, nonce]
-        print(current_app.config["TOKEN"])
         mp_list.sort()
         mp_signature = "".join(mp_list)
         hashmp_signature = hashlib.sha1(mp_signature.encode('utf-8')).hexdigest()
@@ -37,7 +36,7 @@ def mp():
 
     if request.method == "POST":
         res = get_mes(request.data)
-        print(res)
+        # print(res)
         if res['type'] == 'other':
             # 如果不是 text 类型返回失败
             send_mes = make_response(render_template('send/text.xml', to_user=res['from_user'],
