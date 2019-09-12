@@ -11,7 +11,7 @@ from time import time
 
 from flask import request, current_app, make_response, render_template
 
-from app.libs.qqmusic import qq_search
+from app.libs.qqnew import qq_search
 from app.libs.utils import get_mes
 from app.web import web
 

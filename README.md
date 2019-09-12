@@ -45,8 +45,10 @@ environment=LC_ALL='en_US.UTF-8',LANG='en_US.UTF-8'
 
 ## Change Log
 
+- 2019年 09月 13日 星期五 01:46:35 CST second version
 - Tue Apr  2 02:13:13 first version
 
 ## Acknowledgement
 
 - [music-dl](https://github.com/0xHJK/music-dl)
+- [qqmusic-api](https://github.com/MeiK2333/QQMusicAPI)
