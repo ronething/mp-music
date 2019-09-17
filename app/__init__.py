@@ -7,8 +7,12 @@
 Less is more.
 """
 
-from flask import Flask
 
+from flask import Flask 
+from app.libs.utils import get_redis_config
+from app.libs.conn_redis import ConnRedis
+
+redis_cli = ConnRedis(config=get_redis_config())
 
 def create_app():
     app = Flask(__name__)

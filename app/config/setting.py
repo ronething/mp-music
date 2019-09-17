@@ -13,13 +13,13 @@ load_dotenv()
 
 environ = os.getenv('FLASK_ENV', 'development')
 
-PORT = 7000
+PORT = 8000
 
 if environ == 'production':
 
     DEBUG = False
 
-    HOST = '0.0.0.0'
+    HOST = '127.0.0.1'
 
 else:
 
