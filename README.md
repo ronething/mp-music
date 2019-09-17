@@ -45,6 +45,10 @@ environment=LC_ALL='en_US.UTF-8',LANG='en_US.UTF-8'
 
 ## Change Log
 
+- Tue Sep 17 17:51:55 CST 2019 third version
+
+增加 redis 缓存 因为个人订阅号没有办法使用客服接口？
+
 - 2019年 09月 13日 星期五 01:46:35 CST second version
 - Tue Apr  2 02:13:13 first version
 
